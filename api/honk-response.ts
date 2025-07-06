@@ -1,5 +1,4 @@
-// /api/honk-response.ts
-export default function handler(req: any, res: any) {
+export default function handler(_req: any, res: any) {
   res.status(200).json({
     frame: {
       version: 'vNext',
@@ -11,6 +10,20 @@ export default function handler(req: any, res: any) {
     }
   });
 }
+
+// // /api/honk-response.ts
+// export default function handler(req: any, res: any) {
+//   res.status(200).json({
+//     frame: {
+//       version: 'vNext',
+//       image: 'https://honk-frame.vercel.app/frame-preview.png',
+//       button: [
+//         { label: '🪿 Another Honk' }
+//       ],
+//       post_url: 'https://honk-frame.vercel.app/api/honk-response'
+//     }
+//   });
+// }
 
 // import type { VercelRequest, VercelResponse } from '@vercel/node';
 
