@@ -6,7 +6,7 @@ export default function handler(_req: any, res: any) {
       button: [
         { label: '🪿 Another Honk' }
       ],
-      post_url: 'https://honk-frame.vercel.app/api/honk-response'
+      post_url: 'https://honk-frame.vercel.app/?frame=true'
     }
   });
 }
