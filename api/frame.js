@@ -1,4 +1,4 @@
-export default function handler(req: any, res: any) {
+export default function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Only POST requests are allowed.' });
   }
@@ -12,9 +12,9 @@ export default function handler(req: any, res: any) {
     }
   });
 }
-// import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-// export default function handler(req: VercelRequest, res: VercelResponse) {
+
+// export default function handler(req: any, res: any) {
 //   if (req.method !== 'POST') {
 //     return res.status(405).json({ error: 'Only POST requests are allowed.' });
 //   }
@@ -23,13 +23,12 @@ export default function handler(req: any, res: any) {
 //     frames: {
 //       version: 'vNext',
 //       image: 'https://honk-frame.vercel.app/frame-preview.png',
-//       buttons: [
-//         { label: '🦆 Honk Again' }
-//       ],
+//       buttons: [{ label: '🦆 Honk Again' }],
 //       post_url: 'https://honk-frame.vercel.app/api/frame'
 //     }
 //   });
 // }
+
 
 // export default function handler(_req: any, res: any) {
 //   res.status(200).json({
