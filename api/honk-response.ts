@@ -1,12 +1,11 @@
 // /api/honk-response.ts
-
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
-  return res.status(200).json({
+  res.status(200).json({
     frame: {
       version: 'vNext',
-      image: 'https://honk-frame.vercel.app/honk-success.png',
+      image: 'https://honk-frame.vercel.app/frame-preview.png',
       button: [
         {
           label: '🪿 Another Honk'
@@ -16,3 +15,4 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     }
   });
 }
+
