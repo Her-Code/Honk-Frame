@@ -1,10 +1,10 @@
 {
   "name": "Honk Frame",
-  "icon": "https://honk-frame.vercel.app/?frame=true",
+  "icon": "https://honk-frame-dzqb.vercel.app/?frame=true",
   "description": "Send duck honks on Farcaster",
   "action": {
     "type": "post_redirect",
-    "url": "https://honk-frame.vercel.app/"
+    "url": "https://honk-frame-dzqb.vercel.app/"
   },
-  "post_url": "https://honk-frame.vercel.app/?frame=true"
+  "post_url": "https://honk-frame-dzqb.vercel.app/?frame=true"
 }
