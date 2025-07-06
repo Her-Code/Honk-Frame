@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Honk App</title>
+
+  <!-- 👇 Farcaster Mini App Meta Tags 👇 -->
+  <meta name="fc:frame" content="vNext" />
+  <meta name="fc:frame:image" content="https://honk-frame.vercel.app/honk.png" />
+  <meta name="fc:frame:button:1" content="🦆 Honk Now" />
+  <meta name="fc:frame:post_url" content="https://honk-frame.vercel.app/api/frame" />
+  <meta name="fc:frame:action:post_redirect" content="https://honk-frame.vercel.app/" />
 </head>
 <body>
   <div id="root"></div>
@@ -18,3 +25,24 @@
   </script>
 </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honk App</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    // Check for frame interaction on load
+    if (localStorage.getItem('shouldHonk')) {
+      localStorage.removeItem('shouldHonk');
+      // This will be detected by your React app
+      window.location.href = "/?frame=true";
+    }
+  </script>
+</body>
+</html> -->
