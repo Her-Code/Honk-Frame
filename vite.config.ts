@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'), // Main app from src
+        main: resolve(__dirname, 'public/index.html'), // Main app from src
         frame: resolve(__dirname, 'public/frame.html') // Frame from public
       },
       output: {
