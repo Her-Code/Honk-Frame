@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjExMTEyNzEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyM2Y4NENBMjYzRTZGZTExODkzNkU1MWZCODA2MDQ1Q0NmN0I4MTBCIn0",
+    "payload": "eyJkb21haW4iOiJob25rLWZyYW1lLnZlcmNlbC5hcHAifQ",
+    "signature": "MHg3OTVkZjExYzM2MGRmMmU2YWQwZTRkN2ZiNDFmZjg2YTE0YWZlMTE0Njk1YjFkOTc2ODVlMDE0YjNiMTQ0NjdiM2E5MDJmY2Y2MTBlMDYwMjM5YmJiNWY3M2E0N2ZiOGNkYjRhYzRiNzc2NDU2MTY3YTUwMWYzYzkzNzRjNzc5YTFi"
+  },
   "frame": {
     "version": "1",
     "name": "Honk Frame",
