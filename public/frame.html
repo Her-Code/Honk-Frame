@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Farcaster Frame Metadata Only -->
+  <meta property="fc:frame" content="vNext">
+  <meta property="fc:frame:image" content="https://your-url.com/frame-preview.png">
+  <meta property="fc:frame:button:1" content="🦆 Honk Now">
+  <meta property="fc:frame:post_url" content="https://your-url.com/?frame=true">
+  
+  <!-- Immediate redirect to root -->
+  <script>window.location.href = "/";</script>
+</head>
+<body></body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head> -->
+  <!-- Farcaster Frame Metadata -->
+  <!-- <meta property="fc:frame" content="vNext">
+  <meta property="fc:frame:image" content="https://your-deploy-url.com/frame-preview.png">
+  <meta property="fc:frame:button:1" content="🦆 Honk Now">
+  <meta property="fc:frame:post_url" content="https://your-deploy-url.com/frame.html">
+   -->
+  <!-- Client-side handling -->
+  <!-- <script> -->
+    <!-- // Check if this is a frame interaction
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('postUrl')) {
+      // This is a frame button click - redirect to app with frame mode
+      window.location.href = "/?frame=true&honk=true";
+    } else {
+      // This is initial frame load - just show metadata
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.innerHTML = `
+          <div style="display:flex;justify-content:center;align-items:center;height:100vh;">
+            <p>Honk Frame Ready</p>
+          </div>
+        `;
+      });
+    }
+  </script>
+</head>
+<body></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  Farcaster Frame Metadata
+  <meta property="fc:frame" content="vNext">
+  <meta property="fc:frame:image" content="https://your-deploy-url.com/frame-preview.png">
+  <meta property="fc:frame:button:1" content="🦆 Start Honking">
+  <meta property="fc:frame:button:1:action" content="post_redirect">
+  <meta property="fc:frame:post_url" content="https://your-deploy-url.com/frame-interaction">
+  
+  Minimal Standard HTML
+  <meta charset="UTF-8">
+  <title>Honk Frame</title>
+</head>
+<body>
+  Frame Interaction Handler
+  <script>
+    if (window.location.search.includes('frame-interaction')) {
+      window.location.href = "/?frame=true"; // Redirect to main app with frame flag
+    }
+  </script>
+  
+  React still mounts here but shares the same root as index.html -->
+  <!-- <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honk Frame</title>
+  
+  Farcaster Frame Metadata
+  <meta property="fc:frame" content="vNext">
+  <meta property="fc:frame:image" content="https://your-deploy-url.com/frame-preview.png">
+  <meta property="fc:frame:button:1" content="🦆 Start Honking">
+  <meta property="fc:frame:button:1:action" content="post_redirect">
+  <meta property="fc:frame:post_url" content="https://your-deploy-url.com/frame-interaction">
+</head>
+<body>
+  Client-side Frame Handler
+  <script>
+    // Simple client-side interaction handler
+    if (window.location.search.includes('frame-interaction')) {
+      document.body.innerHTML = `
+        <div style="text-align:center; padding:2rem;">
+          <img src="/frame-preview.png" width="600" style="border-radius:8px;">
+          <h1>Honk Frame Activated!</h1>
+          <p>Redirecting to app...</p>
+        </div>
+      `;
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 2000);
+    }
+  </script>
+  
+  React App Mount -->
+  <!-- <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html> -->

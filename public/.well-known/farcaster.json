@@ -1,0 +1,10 @@
+{
+    "name": "Honk Frame",
+    "icon": "https://your-deploy-url.com/honk.png",
+    "description": "Send duck honks on Farcaster",
+    "action": {
+      "type": "post_redirect",
+      "url": "https://your-deploy-url.com"
+    },
+    "post_url": "https://your-deploy-url.com/api/frame"
+  }
