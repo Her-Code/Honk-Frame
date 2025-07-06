@@ -1,13 +1,26 @@
+import { MiniAppProvider } from '@neynar/react';
 import VoiceRecorder from './components/VoiceRecorder';
 
-function App() {
+export default function App() {
   return (
-    <div className="absolute inset-0 overflow-auto bg-gray-100">  
+    <MiniAppProvider analyticsEnabled={true}>
+      <div className="absolute inset-0 overflow-auto bg-gray-100">  
         <VoiceRecorder />
-    </div>
+      </div>
+    </MiniAppProvider>
   );
 }
 
-export default App;
+// import VoiceRecorder from './components/VoiceRecorder';
+
+// function App() {
+//   return (
+//     <div className="absolute inset-0 overflow-auto bg-gray-100">  
+//         <VoiceRecorder />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 
